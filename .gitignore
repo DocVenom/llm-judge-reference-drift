@@ -1,0 +1,22 @@
+# credentials — never commit
+API.TXT
+API.txt
+api.txt
+*.key
+*.token
+.env
+secrets/
+
+# case-level data — withheld for privacy
+data/
+*.jsonl
+raw_outputs/
+judge_scores/
+annotations/
+
+# python
+__pycache__/
+*.pyc
+
+# office temp
+~$*

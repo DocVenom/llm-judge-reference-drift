@@ -1,0 +1,211 @@
+{
+  "description": "Aggregate detection metrics reported in the manuscript. Per-case records are not included: they contain clinical text and are withheld for privacy reasons.",
+  "seed": 20261010,
+  "score_drop_threshold": 1.0,
+  "absolute_flag_score": 3,
+  "judge_model": "Qwen/Qwen3-14B",
+  "environment": {
+    "python": "3.10.8",
+    "platform": "Linux-4.19.90-2107.6.0.0192.8.oe1.bclinux.x86_64-x86_64-with-glibc2.35"
+  },
+  "runs": [
+    {
+      "prompt_version": "v1_baseline",
+      "n_original_outputs": 287,
+      "n_perturbed_pairs": 287,
+      "n_unique_cases": 99,
+      "specificity": 0.8586,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.23,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 18,
+          "sensitivity": 0.1818
+        },
+        "P1_coldheat": {
+          "n": 91,
+          "detected": 27,
+          "sensitivity": 0.2967
+        },
+        "P2_treatment": {
+          "n": 97,
+          "detected": 21,
+          "sensitivity": 0.2165
+        }
+      }
+    },
+    {
+      "prompt_version": "v2_reword",
+      "n_original_outputs": 287,
+      "n_perturbed_pairs": 287,
+      "n_unique_cases": 99,
+      "specificity": 0.9495,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.1185,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 17,
+          "sensitivity": 0.1717
+        },
+        "P1_coldheat": {
+          "n": 91,
+          "detected": 28,
+          "sensitivity": 0.3077
+        },
+        "P2_treatment": {
+          "n": 97,
+          "detected": 17,
+          "sensitivity": 0.1753
+        }
+      }
+    },
+    {
+      "prompt_version": "v3_checklist",
+      "n_original_outputs": 287,
+      "n_perturbed_pairs": 287,
+      "n_unique_cases": 99,
+      "specificity": 0.9899,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.0767,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 74,
+          "sensitivity": 0.7475
+        },
+        "P1_coldheat": {
+          "n": 91,
+          "detected": 18,
+          "sensitivity": 0.1978
+        },
+        "P2_treatment": {
+          "n": 97,
+          "detected": 13,
+          "sensitivity": 0.134
+        }
+      }
+    },
+    {
+      "prompt_version": "v4_aggregate",
+      "n_original_outputs": 287,
+      "n_perturbed_pairs": 287,
+      "n_unique_cases": 99,
+      "specificity": 0.8081,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.446,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 75,
+          "sensitivity": 0.7576
+        },
+        "P1_coldheat": {
+          "n": 91,
+          "detected": 38,
+          "sensitivity": 0.4176
+        },
+        "P2_treatment": {
+          "n": 97,
+          "detected": 26,
+          "sensitivity": 0.268
+        }
+      }
+    },
+    {
+      "prompt_version": "v5_checkeval",
+      "n_original_outputs": 287,
+      "n_perturbed_pairs": 287,
+      "n_unique_cases": 99,
+      "specificity": 0.9798,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.0174,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 1,
+          "sensitivity": 0.0101
+        },
+        "P1_coldheat": {
+          "n": 91,
+          "detected": 0,
+          "sensitivity": 0.0
+        },
+        "P2_treatment": {
+          "n": 97,
+          "detected": 2,
+          "sensitivity": 0.0206
+        }
+      }
+    },
+    {
+      "prompt_version": "v3_no_ce",
+      "n_original_outputs": 287,
+      "n_perturbed_pairs": 287,
+      "n_unique_cases": 99,
+      "specificity": 0.7475,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.3659,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 25,
+          "sensitivity": 0.2525
+        },
+        "P1_coldheat": {
+          "n": 91,
+          "detected": 42,
+          "sensitivity": 0.4615
+        },
+        "P2_treatment": {
+          "n": 97,
+          "detected": 36,
+          "sensitivity": 0.3711
+        }
+      }
+    },
+    {
+      "prompt_version": "v3_no_cc",
+      "n_original_outputs": 287,
+      "n_perturbed_pairs": 287,
+      "n_unique_cases": 99,
+      "specificity": 0.9899,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.0383,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 83,
+          "sensitivity": 0.8384
+        },
+        "P1_coldheat": {
+          "n": 91,
+          "detected": 12,
+          "sensitivity": 0.1319
+        },
+        "P2_treatment": {
+          "n": 97,
+          "detected": 7,
+          "sensitivity": 0.0722
+        }
+      }
+    },
+    {
+      "prompt_version": "v1_sc_k3",
+      "n_original_outputs": 99,
+      "n_perturbed_pairs": 99,
+      "n_unique_cases": 99,
+      "specificity": 0.8889,
+      "specificity_n": 99,
+      "sensitivity_absolute": 0.1212,
+      "by_perturbation_type": {
+        "M1_omission": {
+          "n": 99,
+          "detected": 26,
+          "sensitivity": 0.2626
+        }
+      }
+    }
+  ]
+}
